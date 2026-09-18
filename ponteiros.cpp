@@ -4,7 +4,7 @@ void adicionar_valor(int* vetor, int position) {
     *(vetor + position) = 400;
 }
 
-int main()  {
+int main(int argc, char *argv[])  {
     
     int* vetor = new int[10];
     *(vetor) = 100;
