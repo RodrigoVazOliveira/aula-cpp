@@ -53,5 +53,6 @@ int main(int argc, char *argv[]) {
 
     delete [] name_one;
     delete [] name_two;
+    delete [] name_complet;
     return 0;
 }
