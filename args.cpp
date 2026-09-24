@@ -1,8 +1,10 @@
 #include <iostream>
+#include "pessoa.hpp"
 
 int main(int argc, char *argv[]) {
-    std::cout << "A quantidade de argc:" << argc << std::endl;
-    std::cout << "o primeiro argv é :" << argv[0] << std::endl;
+    Pessoa pessoa = Pessoa("Rodrigo Vaz", "00203203", 12);
+    std::cout << "O endereco de pessoas é:" << pessoa.getName() << std::endl;
+    std::cout << "Imprimir endereco" << &pessoa << std::endl;
 
     return 9;
 }
