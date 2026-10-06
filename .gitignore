@@ -4,3 +4,4 @@ a.out
 tags
 .idea
 *.swo
+*.cpp~
