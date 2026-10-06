@@ -14,6 +14,7 @@ protected:
     this->paws = paws;
   }
 
+public:  
   std::string get_name() const { return this->name; }
   bool get_fly() const { return this->fly; }
   int get_paws() const { return this->paws; }
@@ -43,5 +44,8 @@ int main(int argc, char *argv[]) {
   Dog dog = Dog("Luna", false, 4, 5);
   std::cout << dog.to_string() << std::endl;
 
+
+  std::cout << "Nome do cachorro: " << dog.get_name() << std::endl;
+  
   return 0;
 }
