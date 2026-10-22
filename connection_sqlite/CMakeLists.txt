@@ -11,6 +11,11 @@ find_package(ZLIB REQUIRED)
 add_executable(program main.cpp)
 
 target_link_libraries(program PRIVATE 
-    SQLite::SQLite3
+    SQLite3::SQLite3
     ZLIB::ZLIB
+)
+
+target_compile_options(program PRIVATE
+    -Wall
+    -Wextra
 )

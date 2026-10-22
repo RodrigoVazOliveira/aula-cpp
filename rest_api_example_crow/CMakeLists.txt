@@ -9,7 +9,7 @@ project(RestApi VERSION 0.0.1)
 
 find_package(Crow REQUIRED)
 
-add_executable(rest_api main.cpp)
+add_executable(rest_api main.cpp api/routes.cpp)
 
 
 target_compile_options(rest_api PRIVATE
